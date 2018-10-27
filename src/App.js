@@ -4,6 +4,9 @@ import HeaderClass from './components/Header'
 import './App.css';
 
 class App extends Component {
+  state ={
+    nama:'Popeye'
+  };
   render() {
     return (
       // <div className="App">
@@ -15,12 +18,13 @@ class App extends Component {
       //     To get started, edit <code>src/App.js</code> and save to reload.
       //   </p>
       // </div>
+      
       <div>
-      <HeaderClass nama="Joko" kelas="10" />
-      <HeaderClass nama="Agung" kelas="10" />
-      <HeaderClass nama="Rudi" kelas="10" />
-      <HeaderClass nama="Adi" kelas="10" />
-      <HeaderClass nama="Rahmat" kelas="10" />
+      <HeaderClass nama={this.state.nama} kelas="10" />
+      <HeaderClass nama="Agung" kelas="11" />
+      <HeaderClass nama="Rudi" kelas="12" />
+      <HeaderClass nama="Adi" kelas="13" />
+      <HeaderClass nama="Rahmat" kelas="14" />
       </div>
     );
   }

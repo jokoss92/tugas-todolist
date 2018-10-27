@@ -3,9 +3,13 @@ class HeaderClass extends Component{
     // state ={
     //   angka: 1
     // };
-    handleClick=()=>{
-    alert("Kok diklik sih?");
-    };
+    // handleClick=()=>{
+    // alert("Kok diklik sih?");
+    // };
+    // state={
+    //   nama : "Joko"
+
+    // };
   
     render(){
       return (
