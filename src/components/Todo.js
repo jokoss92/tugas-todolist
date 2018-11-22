@@ -1,4 +1,6 @@
-import React, {Component} from "react"
+import React, {Component} from "react";
+import { Button, Input } from 'reactstrap';
+import './todo.css';
 
 class Todo extends Component{
     state ={
@@ -78,9 +80,9 @@ componentDidMount(){
 
 render(){
     return(
-        <div>
+        <div className="backgroundtodo">
             <h1>Todo</h1>
-          <input type="text" onChange={this.handleChange} value={this.state.input}/><br/>
+          <Input type="text" onChange={this.handleChange} value={this.state.input}/><br/>
          
           {this.state.buttonView ?(
               <div>
@@ -88,7 +90,7 @@ render(){
                   <button onClick={()=>this.buttonCancel()}>Batal</button>
               </div>
                  
-          ):( <button onClick={()=>this.addData()}>Simpan</button>)}
+          ):( <Button onClick={()=>this.addData()}>Simpan</Button>)}
       
           <ul>
            {this.state.database.map((datum,index) =>{
