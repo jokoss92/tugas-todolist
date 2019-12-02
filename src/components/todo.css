@@ -1,5 +1,6 @@
 .backgroundtodo{
     background-color: aquamarine;
     background: 'view.jpg';
+    align-self: auto;
 }
 
